@@ -1,7 +1,7 @@
 <html lang='pt-br'>
     <head>
         <meta charset='utf8'>
-        <title>Curso Gustavo Guanabara</title>
+        <title>Curso Gustavo GG</title>
         <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!-- linkando estilo css-->  
         
     </head>
