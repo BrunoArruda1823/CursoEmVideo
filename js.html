@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Java Script</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script>
+            function acendelampada(){
+            document.getElementById("luz").src = "_imagens/lampada-acesa.jpg";    
+               
+            };
+            function apagalampada (){
+                document.getElementById("luz").src= "_imagens/lampada-apagada.jpg";
+            };
+            function quebralampada (){
+                document.getElementById("luz").src= "_imagens/lampada-quebrada.jpg";
+            };
+        </script>
+        
+    </head>
+    <body>
+        <h1>Teste script</h1>
+        <img src="_imagens/lampada-apagada.jpg" id="luz" onmousemove="acendelampada()" onmouseout="apagalampada()" onclick="quebralampada()"/>
+          
+        
+    </body>
+         
+ 
+</html>
