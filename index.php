@@ -9,7 +9,7 @@
         <div id='interface'>       
             <header id='cabecalho'>
                 <hgroup>   <br><br><br><h1>Google Glass</h1>
-                    <h2>A revolução do  <!u><a id="google" href="https://www.google.com.br" target="_blank">Google</a></u> está chegando</h2>
+                    <h2>A revolução do  <u><a id="google" href="https://www.google.com.br" target="_blank">Google</a></u> está chegando</h2>
             </hgroup>
                 <img id="ocp" src="_imagens/oc_p.png" alt="alt"/>
                 <nav id="menu"><h1>Menu Principal</h1>
