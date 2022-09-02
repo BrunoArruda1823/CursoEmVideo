@@ -1,7 +1,7 @@
 <html lang='pt-br'>
     <head>
         <meta charset='utf8'>
-        <title>Curso Gustavo GG</title>
+        <title>Curso Gustavo 3gg</title>
         <link rel="stylesheet" type="text/css" href="_css/estilo.css"/> <!-- linkando estilo css-->  
         
     </head>
