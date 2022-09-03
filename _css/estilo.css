@@ -1,4 +1,4 @@
-@charset "uff-8"; 
+@charset "UTF-8"; 
 @fonte-face {
     font-family:'fonte-logo' ;
         src: url("../fonts/bubblegum-sans-regular.otf")
@@ -11,9 +11,7 @@ body {
  background-color: #dddddd;/*Cor do fundo da página*/
  color: rgba(0,0,0,0.99);/*cor do texto*/
 }
-img {
-        
-}
+
 
 div#interface {
     padding: 30px ;
@@ -78,7 +76,8 @@ div#interface {
                  display: block; 
                  position: absolute;
                  top: 20px; 
-                 left: 30px;
+                 left: 450px;
+                
                  
              }
              
@@ -86,8 +85,8 @@ div#interface {
                   nav#menu ul{
                       text-align: justify;
                       position: relative;
-                      top: -30px;
-                      left: 250px;
+                      top: -30px;/*levar menu para o topo*/
+                      left: 80px;/*Levar lista de menu para esquerda*/
                       font-size: 20px;
                       list-style: none;
                       text-transform: uppercase;
@@ -133,7 +132,7 @@ div#interface {
 }/*oculos pequeno*/
 img#ocp {
     position: absolute;
-    right:  250px;
+    right:  500px;
     top: 70px; 
 }
    
@@ -246,3 +245,4 @@ article#artigo h2 {
      margin: 10px 10px 1px 20px;
     
 }
+
