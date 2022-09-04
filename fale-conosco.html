@@ -6,6 +6,15 @@
         
     </head>
 <script src="_javascript/funcoes.js"></script>
+<script>
+
+    function calctotal(){
+        var qtd = parseInt(document.getElementById ('cqua').value);
+        tot= qtd * 1500;
+        document.getElementById ('ctot').value =tot; 
+    };
+                    
+</script>
     
     
     <body>
@@ -29,36 +38,75 @@
                 </nav>
             </header>
 
-      <h3> Glass > Especificações</h3>
-                <h1>Raio-X no Google Glass</h1>
+      <h3> Glass > fale-conosco</h3>
+                <h1>Contato</h1>
                 <h2>Por: <a href="https://www.facebook.com/bruno.arruda.332/" target="_blank"> Bruno Arruda</h2></a>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+              
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
+                <form method="post" oninput="calctotal();">
+               <legend id="user">Identificação do Usuário</legend>  
 
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
+               <fieldset> 
+                <p>Nome:</p><input type="text" size="30" placeholder="Nome Completo" maxlength="90" name="tnome" id="cnome" required />
+                <p>Senha:</p><input type="password" maxlength="30" size="30" placeholder="Senha" required id="csenha" name="tsenha"/> 
+                <p>mail</p>   <input type="email" maxlength="50" size="30" placeholder="E-mail" required id="cemail" name="temail"/> 
+            </fieldset>
+               <fieldset id="sexo" > <legend> Sexo</legend>   
+                             <input type="radio" name="tsexo" id="cmasc"/> <label for="cmasc">Masculino</label><br><br>
+                             <input type="radio" name="tsexo" id="cfem"/> <label for="cfem"> Feminino</label>
+                            
+                            </fieldset>
+<p>Data de Nascimento <input type="date" name="tdata" id="cdata"/>  </p>
+                </fieldset>
+                <legend id="endereco">Endereço do Usuário</legend>    
+                        <fieldset> 
+                            <p>Logradouro</p> <input type="text" size="30" maxlength="50" name="tlog" id="clog"/> 
+                            <p>Número</p>   <input type="number" size="30" maxlength="5" name="tnum" id="cnum" min="0"/>   
+                            <p>Estado</p>   
+                            <select name="test" id="cest" placeholder="Estado">
+                                <option value="Null">Selecione Seu Estado</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                            <p>Cidade</p> <input type="text" name="tcid" id="ccid" size="30"   maxlength="20"/> 
+                        </fieldset>
+                        <legend id="pedido">Mensagem do Usuário</legend>     
+                        <fieldset>  Grau de Urgência
+                            <p>Mensagem</p> <textarea name="tmen" cols="45" rows="5" placeholder="Digite sua Mensagem"></textarea>  
+                        </fieldset>
+                        <legend>Quero um Google Glass</legend>     
+                        <fieldset id="pedido"> Gostaria de adquirir um Google Glass quando disponível
+                            <p>Cor</p>  
+                            <p>Quantidade <input type="number" min="0" max="5" id="cqua" name="tquan"/></p>   
+                            <p>Preço Total R$ <input type="text" name="ttot" id="ctot" placeholder="Total a Pagar" readonly/></p>  
+                        </fieldset>
+               </form>     
 [BOTÃO ENVIAR]
 
 <footer id="rodape">
