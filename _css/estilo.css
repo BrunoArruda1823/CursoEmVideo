@@ -12,6 +12,9 @@ body {
  color: rgba(0,0,0,0.99);/*cor do texto*/
 }
 
+h1#chama_perfil{
+    text-align: center;
+}
 
 div#interface {
     padding: 30px ;
@@ -117,7 +120,7 @@ div#interface {
                         text-decoration: underline;
                     }
                     
-                    a#google {
+                    a#linkedin {
                         color: blue;
                         text-decoration: none;
                     }
@@ -129,19 +132,8 @@ div#interface {
                         font-size: 20px;
                         padding-bottom: 1%; /* 540/720 */                      margin: 5px 5px 5px 5px; 
                          
-}/*oculos pequeno*/
-img#ocp {
-    position: absolute;
-    right:  500px;
-    top: 70px; 
 }
-   
 
-header#cabecalho {
-    border-bottom: 2px #606060 solid;
-   background: url("../_imagens/glass-logo-peq.png") no-repeat 450px 100px;
-   
-}
 
 header#cabecalho h1{
     font-family: arial,sans-serif;
